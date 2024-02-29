@@ -14,8 +14,10 @@ while True:
         if guess == number:
             print("Congratulations! You guessed the right number.")
             break
+        elif guess < number:
+            print("Too low! Try again.")
         else:
-            print("Sorry! That's not the correct number. Try again.")
+            print("Too high! Try again.")
     except ValueError:
         print("Please enter a valid number or 'q' to quit.")
 
